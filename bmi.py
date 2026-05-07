@@ -15,8 +15,11 @@ def calculate_bmi(height, weight):
         print("You are 'Over Weight")
         return 1
 
+def main():
+    user_weight = input("Enter your weight: ")
+    user_height = input("Enter yout height: ")
+    return_value = calculate_bmi(float(user_height), float(user_weight))
+    print(f"Return Value: {return_value}")
 
-user_weight = input("Enter your weight: ")
-user_height = input("Enter yout height: ")
-return_value = calculate_bmi(float(user_height), float(user_weight))
-print(f"Return Value: {return_value}")
+if __name__ == "__main__":
+    main()
